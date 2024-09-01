@@ -1,0 +1,44 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 400px; // Fixed height for the chat container
+  border: 1px solid #dee2e6; // Bootstrap border color
+  border-radius: 8px; // Rounded corners
+  overflow: hidden; // Hide overflow
+  margin-bottom: 20px; // Space below chat
+
+  .messages-container {
+    flex: 1;
+    padding: 15px;
+    background-color: #f8f9fa; // Bootstrap's light background
+    overflow-y: auto; // Scrollable messages
+
+    .message {
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 20px;
+      max-width: 70%; // Limit the max-width of message bubbles
+      position: relative;
+      margin-bottom: 30px;
+
+      &.user {
+        background-color: #007bff; // User bubble color
+        color: white;
+        align-self: flex-end;
+        margin-left: auto; // Align to the right
+      }
+
+      &.assistant {
+        background-color: #e9ecef; // AI bubble color
+        color: black;
+        align-self: flex-start; // Align to the left
+      }
+    }
+
+    .offsetter-div {
+      height: 150px;
+      background-color: white;
+      width: 1px;
+    }
+  }
+}

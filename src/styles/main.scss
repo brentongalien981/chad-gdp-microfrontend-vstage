@@ -1,0 +1,16 @@
+$primary-color: #007bff; // Bootstrap primary color
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  color: $primary-color;
+}
+
+.container {
+  padding: 20px;
+}

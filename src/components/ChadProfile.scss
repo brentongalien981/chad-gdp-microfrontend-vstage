@@ -1,0 +1,17 @@
+.image-container {
+  min-width: 300px;
+  min-height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.profile-attribs {
+  font-size: 0.95rem;
+}
